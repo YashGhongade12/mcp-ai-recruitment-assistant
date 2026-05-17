@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Screening Result</title>
+</head>
+<body>
+
+    <h1>Application Submitted Successfully!</h1>
+
+    <h2>Candidate: {{ name }}</h2>
+
+    <h3>Status: {{ status }}</h3>
+
+    <h3>Score: {{ score }}/100</h3>
+
+    <h3>Matched Skills:</h3>
+
+    <ul>
+        {% for skill in matched_skills %}
+            <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>

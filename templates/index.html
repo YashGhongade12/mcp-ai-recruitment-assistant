@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Recruitment System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>AI Candidate Screening Assistant</h1>
+
+        <form action="/submit" method="POST" enctype="multipart/form-data">
+
+            <input type="text" name="full_name" placeholder="Full Name" required>
+
+            <input type="email" name="email" placeholder="Email Address" required>
+
+            <input type="text" name="phone" placeholder="Phone Number" required>
+
+            <textarea name="skills" placeholder="Enter your skills"></textarea>
+
+            <input type="file" name="resume" accept=".pdf" required>
+
+            <button type="submit">Apply Now</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
